@@ -1,6 +1,6 @@
 <?php
 
-$heading = "Homepage";
+$heading = "Students";
 
 require "views/index.view.php";
 

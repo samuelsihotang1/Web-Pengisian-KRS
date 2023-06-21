@@ -1,6 +1,7 @@
 <?php require "partials/head.php"; ?>
 <?php require "partials/nav.php"; ?>
 <?php require "partials/banner.php"; ?>
+
 <main>
   <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
 
@@ -19,8 +20,8 @@
       foreach ($students as $student) :
         $nim = $student['nim'];
         $name = $student['name_std'];
-        $editkrs = "/edit.php?student_id=$nim";
-        $viewkrs = "/view.php?nim=$nim";
+        $editkrs = "/edit?nim=$nim";
+        $viewkrs = "/view?nim=$nim";
       ?>
         <tr>
           <td><?= $nim ?></td>
